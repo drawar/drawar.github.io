@@ -9,7 +9,7 @@ tags:  r quant shiny
 <a href="https://lhvan.shinyapps.io/ETF_Portfolio/"><img src="https://raw.githubusercontent.com/drawar/drawar.github.io/master/_posts/etf-portfolio_img1.png" width="1200" height="300" />
 
 
-Update 18/05/2017: It has come to my attention that Yahoo Finance has changed their API and thus most download functions, including the one I'm using for this dashboard, will no longer work. If anyone is interested in developing a fix, please follow this GitHub [this][thread].
+Update 18/05/2017: It has come to my attention that Yahoo Finance has changed their API and thus most download functions, including the one I'm using for this dashboard, will no longer work. If anyone is interested in developing a fix, please follow this GitHub [thread][thread].
 <br>
 
 
