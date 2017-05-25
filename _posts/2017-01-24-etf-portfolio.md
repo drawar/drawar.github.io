@@ -2,7 +2,7 @@
 layout: post
 title: "Optimal ETF Portfolio"
 date: 24 Jan 2017
-categories: finance
+categories: posts
 tags:  r quant shiny
 ---
 
