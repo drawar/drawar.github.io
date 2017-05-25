@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "plotly demo"
-date: 23 May 2016
-categories: data science
+date: 24 May 2016
+categories: posts
 tags:  r data-visualization plotly interactive
 ---
 
