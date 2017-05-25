@@ -2,6 +2,7 @@
 layout: post
 title:  "Dynamic Copula Estimation"
 date:   2016-04-24
+categories: posts
 tags: copula r
 comments: true
 ---
