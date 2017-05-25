@@ -2,7 +2,7 @@
 layout: post
 title:  "Add borders and annotations outside a ggplot using gtable"
 date:   2016-05-23
-categories: data science
+categories: posts
 tags:  r data-visualization ggplot2
 comments: true
 ---
