@@ -2,7 +2,7 @@
 layout: post
 title: "Black's (1976) Implied Volatility"
 date: 10 Dec 2016
-categories: finance
+categories: posts
 tags:  r quant
 ---
 
