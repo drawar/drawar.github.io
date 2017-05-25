@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Structural Modeling of Credit Risk part 1"
+title:  "Structural Modeling of Credit Risk - Part 1"
 date:   2016-04-30
 categories: posts
 tags:  credit-risk merton r
