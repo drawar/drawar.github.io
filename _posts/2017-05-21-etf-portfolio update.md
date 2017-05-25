@@ -2,7 +2,7 @@
 layout: post
 title: "New Update to Optimal ETF Portfolio Dashboard"
 date: 21 May 2017
-categories: finance
+categories: posts
 tags:  r quant shiny
 comments: true
 ---
