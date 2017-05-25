@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "A Short Update"
+title:  "Structural Modeling of Credit Risk part 1"
 date:   2016-04-30
-categories: other
+categories: posts
 tags:  credit-risk merton r
 comments: true
 ---
