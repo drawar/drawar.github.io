@@ -2,6 +2,7 @@
 layout: post
 title:  "Shiny App for Exploring Stock Returns"
 date:   2016-04-17
+categories: posts
 tags: shiny r
 comments: true
 ---
