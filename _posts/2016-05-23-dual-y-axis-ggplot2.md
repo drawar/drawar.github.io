@@ -2,6 +2,7 @@
 layout: post
 title:  "Line plot with two y-axes using ggplot2"
 date:   2016-05-22
+categories: posts
 tags:  r data-visualization ggplot2
 comments: true
 ---
