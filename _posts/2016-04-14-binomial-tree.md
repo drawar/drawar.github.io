@@ -2,6 +2,7 @@
 layout: post
 title:  "Binomial Tree Model"
 date:   2016-04-14
+categories: posts
 tags: btm option
 comments: true
 ---
