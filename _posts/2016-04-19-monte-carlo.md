@@ -2,6 +2,7 @@
 layout: post
 title:  "Monte Carlo Simulation"
 date:   2016-04-19
+categories: posts
 tags: mc option
 comments: true
 ---
