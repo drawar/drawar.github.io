@@ -2,7 +2,7 @@
 layout: post
 title: "Qualitative Recognition of Weight Lifting Exercises"
 date: 24 Sep 2016
-categories: data science
+categories: posts
 tags:  r ml
 ---
 
