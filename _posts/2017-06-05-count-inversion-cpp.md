@@ -25,9 +25,6 @@ long int countInv(int a[], int low, int high) {
     long int left_inv = countInv(a, low, mid);
     long int right_inv = countInv(a, mid+1, high);
     long int split_inv = countSplitInv(a, low, mid, high);
-    //cout << "left_inv = " << left_inv << endl;
-    //cout << "right_inv = " << right_inv << endl;
-    //cout << "split_inv = " << split_inv << endl;
     return left_inv + right_inv + split_inv;
   }
   return 0;
