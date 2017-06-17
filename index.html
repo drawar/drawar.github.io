@@ -1,5 +1,47 @@
----
-layout: homepage
----
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+{% seo %}
+</head>
 
+<body id="post-index" {% if page.image.feature %}class="feature"{% endif %}>
 
+{% include browser-upgrade.html %}
+{% include navigation.html %}
+
+<div class="entry-header">
+  <div class="header-title">
+    <div class="header-title-wrap">
+      <h1>{{ site.title }}</h1>
+      <h2>{{ page.title }}</h2>
+    </div><!-- /.header-title-wrap -->
+  </div><!-- /.header-title -->
+</div><!-- /.entry-header -->
+
+<div id="main" role="main">
+  <div class="container">
+    <div class="left">
+       <img src="http://lorempixel.com/640/480/" alt="" />
+        
+    </div>
+    <div class="right">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corporis voluptates repellat ullam labore qui voluptatum error nesciunt ratione dolorem fugiat veritatis ipsum nobis eius dicta est obcaecati ab animi illum molestias accusamus cum laboriosam magni recusandae earum unde fuga deserunt laudantium facere ducimus rerum tempora pariatur consectetur iste nulla a aut ea sit nam autem doloremque iusto exercitationem voluptatem facilis eos quasi. Mollitia sequi assumenda corrupti repellendus ex amet reprehenderit animi illum ducimus totam unde quia distinctio quam velit magnam. Voluptatibus dolores natus sint enim fugiat. Sapiente voluptates enim officiis. Iste repudiandae illo nulla sed nam a ratione iure?</p>
+    </div>
+</div>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+{% include scripts.html %}          
+{% include google_analytics.html %}
+</body>
+</html>
