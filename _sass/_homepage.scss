@@ -1,19 +1,23 @@
 
 .container {
 	width: 80%;
-	margin: 10px auto;
+	margin: 20px auto;
 	overflow: hidden;
 }
 
 .left {
     float: left;
-    width: 50%;
+    width: 45%;
 }
 .right {
     float: right;
-    width: 50%;
+    width: 45%;
 }
-.container:after {
+.group {
+	width: 80%;
+	overflow: hidden;
+}
+.group:after {
     content:"";
     display: table;
     clear: both;
