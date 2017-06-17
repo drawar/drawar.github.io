@@ -4,14 +4,16 @@ sitemap: false
 
 /*
  *
- *  HPSTR
+ *  
  *
- *  Designer: Michael Rose
+ *  Original designer: Michael Rose
+ *  Modifier: Le Hoang Van
  *  Twitter: http://twitter.com/mmistakes
  *
 */
 
 // Partials
+@import "navbar";
 @import "variables";
 @import "mixins";
 @import "reset";
