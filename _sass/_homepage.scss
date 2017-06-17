@@ -1,0 +1,32 @@
+
+.container {
+	width: 80%;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.left {
+    float: left;
+    width: 40%;
+}
+.right {
+    float: right;
+    width: 40%;
+}
+.container:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 480px) {
+    .left, 
+    .right {
+        float: none;
+        width: auto;
+    }
+}
+
