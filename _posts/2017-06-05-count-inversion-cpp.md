@@ -3,6 +3,8 @@ layout: post
 title:  "Counting Inversions - C++"
 date:   2017-06-05
 tags: algo cpp
+image: /assets/post_images/night-track.JPG
+image2: /assets/post_images/night-track-mobile.JPG
 comments: true
 ---
 
