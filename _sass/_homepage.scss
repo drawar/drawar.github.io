@@ -30,17 +30,17 @@ img {
 /*CONTAINER STYLES*/
 
 .container {
-	width: 90%;
-	margin: 30px 30px;
+	width: 80%;
+	margin: 30px auto;
 	overflow: hidden;
 }
 
 /*GALLERY STYLES*/
 .galleryItem {
 	color: #797478;
-	font: 15px/1.5 Verdana, Helvetica, sans-serif;
-	width: 25%;
-	margin:  2.5% 2.5% 30px 2.5%;
+	font: 10px/1.5 Verdana, Helvetica, sans-serif;
+	width: 20%;
+	margin:  2.5% 2.5% 50px 2.5%;
 	float: center;
 	-webkit-transition: color 0.5s ease;
 }
