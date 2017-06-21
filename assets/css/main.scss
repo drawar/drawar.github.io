@@ -15,7 +15,7 @@ sitemap: false
 // Partials
 @import "homepage";
 @import "variables";
-
+@import "mixins";
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
 @import "site";
@@ -27,6 +27,6 @@ sitemap: false
 @import "animations";
 @import "dl-menu";
 @import "page";
-@import "mixins";
+
 @import "incontent";
 @import "reset";
