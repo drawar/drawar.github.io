@@ -14,6 +14,12 @@
 {% include browser-upgrade.html %}
 {% include navigation.html %}
 
+<!-- for animated captions -->
+<link rel="stylesheet" href="assets/css/sass-compiled.css" />
+<!-- to support old browsers -->
+<script src="assets/js/vendor/modernizr.js" type="text/javascript"></script>
+
+	
 <div class="entry-header">
   {% if page.image.credit %}<div class="image-credit">Image source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
   {% if page.image.feature %}
@@ -29,72 +35,56 @@
   </div><!-- /.header-title -->
 </div><!-- /.entry-header -->
 
+<!--Effect: Bottom to Top -->
+<div class="pic">
+<img src="img/01.jpg" class="pic-image" alt="Pic"/>
+<span class="pic-caption bottom-to-top">
+<h1 class="pic-title">Bottom to Top</h1>
+<p>Hi, this is a simple example =D</p>
+</span>
+</div>	
+	
 <div class="container">
     
-	    		    	
-	    	<div class="galleryItem">
-	    		<a href="#"><img src="http://i.imgur.com/jJuGhBX.png" alt="" /></a>
-	    		<h3>SPOTIFY SONG ATTRIBUTES VISUALIZER</h3>
-	    		
-	    	</div>
+	    	<div class="pic">
+			<img src="http://i.imgur.com/jJuGhBX.png" class="pic-image" alt="Pic"/>
+			<span class="pic-caption bottom-to-top">
+			<h1 class="pic-title">Bottom to Top</h1>
+			</span>
+		</div>	    	
+	    	<div class="pic">
+			<img src="http://i.imgur.com/jJuGhBX.png" class="pic-image" alt="Pic"/>
+			<span class="pic-caption bottom-to-top">
+			<h1 class="pic-title">Bottom to Top</h1>
+			</span>
+		</div>
 	    	
-	    	<div class="galleryItem">
-	    		<a href="#"><img src="https://cdn.dribbble.com/users/66623/screenshots/459466/brunchers.jpg" alt="" /></a>
-	    		<h3>Two</h3>
-	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing.</p>
-	    	</div>
+	    	<div class="pic">
+			<img src="http://i.imgur.com/jJuGhBX.png" class="pic-image" alt="Pic"/>
+			<span class="pic-caption bottom-to-top">
+			<h1 class="pic-title">Bottom to Top</h1>
+			</span>
+		</div>
 	    	
-	    	<div class="galleryItem">
-	    		<a href="#"><img src="http://lorempixel.com/400/200/sports/3" alt="" /></a>
-	    		<h3>Three</h3>
-	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing.</p>
-	    	</div>
+	    	<div class="pic">
+			<img src="http://i.imgur.com/jJuGhBX.png" class="pic-image" alt="Pic"/>
+			<span class="pic-caption bottom-to-top">
+			<h1 class="pic-title">Bottom to Top</h1>
+			</span>
+		</div>
 	    	
-	    	<div class="galleryItem">
-	    		<a href="#"><img src="http://lorempixel.com/400/200/sports/4" alt="" /></a>
-	    		<h3>Four</h3>
-	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing.</p>
-	    	</div>
+	    	<div class="pic">
+			<img src="http://i.imgur.com/jJuGhBX.png" class="pic-image" alt="Pic"/>
+			<span class="pic-caption bottom-to-top">
+			<h1 class="pic-title">Bottom to Top</h1>
+			</span>
+		</div>
 	    	
-	    	<div class="galleryItem">
-	    		<a href="#"><img src="http://lorempixel.com/400/200/sports/5" alt="" /></a>
-	    		<h3>Five</h3>
-	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing.</p>
-	    	</div>
 	    	
-	    	<div class="galleryItem">
-	    		<img src="http://lorempixel.com/400/200/sports/6" alt="" /></a>
-	    		<h3>Six</h3>
-	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing.</p>
-	    	</div>
-	    	
-	    	<div class="galleryItem">
-	    		<a href="#"><img src="http://lorempixel.com/400/200/sports/7" alt="" /></a>
-	    		<h3>Seven</h3>
-	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing.</p>
-	    	</div>
-	    	
-	    	<div class="galleryItem">
-	    		<a href="#"><img src="http://lorempixel.com/400/200/sports/8" alt="" /></a>
-	    		<h3>Eight</h3>
-	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing.</p>
-	    	</div>
-	    	
-	    	<div class="galleryItem">
-	    		<a href="#"><img src="http://lorempixel.com/400/200/sports/9" alt="" /></a>
-	    		<h3>Nine</h3>
-	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing.</p>
-	    	</div>
-	    	
-	    	<div class="galleryItem">
-	    		<a href="#"><img src="http://lorempixel.com/400/200/sports/10" alt="" /></a>
-	    		<h3>Ten</h3>
-	    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing.</p>
-	    	</div>
     	</div>
     	
     	
-    </div>
+
 
 
 
