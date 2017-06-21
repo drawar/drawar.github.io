@@ -23,7 +23,9 @@ body{
     line-height: 20px;
 }
 
-
+*{
+    @include prefix(box-sizing, border-box);
+}
 
 /* 
    Main content

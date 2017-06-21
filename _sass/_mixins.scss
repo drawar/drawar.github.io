@@ -7,7 +7,7 @@
    ========================================================================== */
 @mixin prefix($prop, $val){
     @each $prefix in -webkit-, -moz-, -o-, -ms-, ''{
-        #{$prefix}#{$prop}: $val;
+        #{$prefix+$prop}: $val;
     }
 }
 
