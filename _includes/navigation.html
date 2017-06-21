@@ -4,15 +4,8 @@
 		<li><a href="{{ site.url }}">About</a></li>
 		<li><a href="{{ site.url }}/project/">Projects</a>
 		<li><a href="{{ site.url }}/blog/">Blog</a>
-	
-		</li>
-		<li>
-			<a href="#">Posts</a>
-			<ul class="dl-submenu">
-				<li><a href="{{ site.url }}/posts/">All Posts</a></li>
-				<li><a href="{{ site.url }}/tags/">All Tags</a></li>
-			</ul>
-		</li>
+		<li><a href="{{ site.url }}/pdfs/resume.pdf">Resume</a>
+
 		{% for link in site.data.navigation %}
 	    {% if link.url contains 'http' %}
 	        {% assign domain = '' %}
