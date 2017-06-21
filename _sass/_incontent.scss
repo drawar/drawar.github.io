@@ -4,18 +4,15 @@
 |   URL: bit.ly/BrunoTw                     |
 |------------------------------------------*/
 
-/*-- Dependencies: _mixins.scss ---*/
 /*--- CONTENT STRUCTURE ---*/
 .pic{
     max-width: 300px;
     max-height: 200px;
     position: relative;
     overflow: hidden;
-    width: 25.3%;
-	margin:  4% 4% 50px 4%;
+    margin: 10px;
 
     display: inline-block;
-
 
     @include prefix(animation, anima 2s);
     @include prefix(backface-visibility, hidden);
@@ -37,10 +34,6 @@
 }
 
 .pic-image{
-    max-width: 100%;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
     @include prefix(transform, scale(1.1));
 }
 .pic:hover .pic-image{
@@ -195,26 +188,12 @@ a ,a:hover,
     @include prefix(transform, rotateY(0) rotateX(0));
 }
 
-/* MEDIA QUERIES*/
-@media only screen and (max-width : 940px),
-only screen and (max-device-width : 940px){
-	.pic {width: 21%;}
-}
-
-@media only screen and (max-width : 720px),
-only screen and (max-device-width : 720px){
-	.pic {width: 29.33333%;}
-	.pic-title {font-size: 40px;}
-}
-
-@media only screen and (max-width : 530px),
-only screen and (max-device-width : 530px){
-	.pic {width: 46%;}
-	.pic-title {font-size: 28px;}
-}
-
-@media only screen and (max-width : 320px),
-only screen and (max-device-width : 320px){
-	.gpic {width: 96%;}
-	.pic-title {font-size: 70px;}
+@media screen and (max-width: 560px){
+    .pic{
+        max-width: 400px;
+        max-height:  300px;
+        display: block;
+        @include prefix(animation, none);
+        margin: 10px auto;
+    }
 }
