@@ -3,17 +3,11 @@
    Adapted from http://github.com/necolas/normalize.css
    ========================================================================== */
 
-
-html {
+*, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
 
 // Display in IE6-9 and FF3
 // -------------------------

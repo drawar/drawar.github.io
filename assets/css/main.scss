@@ -16,8 +16,9 @@ sitemap: false
 @import "homepage";
 @import "variables";
 @import "mixins";
+@import "reset";
 @import "vendor/font-awesome/font-awesome";
-//@import "vendor/magnific-popup/magnific-popup";
+@import "vendor/magnific-popup/magnific-popup";
 @import "site";
 @import "typography";
 @import "syntax";
@@ -27,5 +28,3 @@ sitemap: false
 @import "animations";
 @import "dl-menu";
 @import "page";
-@import "incontent";
-@import "reset";

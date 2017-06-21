@@ -5,14 +5,9 @@
 /* 
    Utility mixins
    ========================================================================== */
-@mixin prefix($prop, $val){
-    @each $prefix in -webkit-, -moz-, -o-, -ms-, ''{
-        #{$prefix+$prop}: $val;
-    }
-}
 
 /* clearfix */
-/*@mixin clearfix {
+@mixin clearfix {
   *zoom: 1;
 
   &:before,
@@ -27,15 +22,6 @@
   &:after {
     clear: both;
   }
-}*/
-
-@mixin clearfix{
-    &:before,
-    &:after{
-        content:'';
-        display: table;
-        clear: both;
-    }
 }
 
 /* Webkit-style focus */
@@ -135,13 +121,4 @@
   width : auto;
   margin : 0; 
   overflow: visible; 
-}
-
-// Opacity
-@mixin transparency($opacity){
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=($opacity * 100))";
-    filter: alpha(opacity=($opacity * 100));
-    -moz-opacity: $opacity;
-    -khtml-opacity: $opacity;
-    opacity: $opacity;
 }
