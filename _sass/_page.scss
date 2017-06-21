@@ -22,11 +22,11 @@ body{
 	width: 100%;
     line-height: 20px;
 }
-/*
+
 *{
     @include prefix(box-sizing, border-box);
 }
-*/
+
 
 /* 
    Main content
@@ -69,7 +69,7 @@ header{
     color: $maincolor + rgba(80,80,80,0.92) ;
     padding: 20px 50px;
     display: inline-block;
-    /*@include prefix(border-radius, 5px);*/
+    @include prefix(border-radius, 5px);
     &:hover{
         background: $maincolor + rgba(50,50,50,0.92);
     }
