@@ -12,7 +12,7 @@
 }
 
 /* clearfix */
-@mixin clearfix {
+/*@mixin clearfix {
   *zoom: 1;
 
   &:before,
@@ -27,6 +27,15 @@
   &:after {
     clear: both;
   }
+}*/
+
+@mixin clearfix{
+    &:before,
+    &:after{
+        content:'';
+        display: table;
+        clear: both;
+    }
 }
 
 /* Webkit-style focus */
