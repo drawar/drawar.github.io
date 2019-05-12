@@ -7,7 +7,7 @@ tags: dqn pytorch
 comments: true
 ---
 
-Problem Statement {#problemstatement}
+Problem Statement
 =================
 
 The environment is called `LunarLander-v2` which is part of the Python `gym` package @lunarlander. An episode always begins with the lander module descending from the top of the screen. At each step, the agent is provided with the current state of the space vehicle which is an 8-dimensional vector of real values, indicating the horizontal and vertical positions, orientation, linear and angular velocities, state of each landing leg (left and right) and whether the lander has crashed. The agent then has to make one of four possible actions, namely do nothing, fire left orientation engine, fire main engine, or fire right orientation engine. These are 4 levers the agent must learn to control in order to land safely.
@@ -35,12 +35,6 @@ Q-learning is one of the popular algorithms used in reinforcement learning becau
 DQN is simply an extension of a simple Q-network that is built upon tabular Q-learning. When the Q-table becomes too large to compute over as a result of infinitely many states, neural networks come to the rescue. By increasing the number of layers and nodes per layer, we can get a reasonably accurate function approximator that can map any number of possible states to their Q-values. While neural networks allow for greater flexibility, they come at a cost of stability: it turns out that Q-learning may suffer from instability and divergence when combined with an nonlinear Q-value function approximation and bootstrapping. DQN introduces two innovative additions that can stabilize training and allow for faster convergence:
 
 -   Experience replay: The reason why experience replay is helpful has to do with the fact that successive states are highly similar. This means that there is a significant risk that the network will completely forget about what it is like to be in state it has not seen in a while. This is detrimental to learning because catastrophic events that happened long ago might be forgotten and cannot be learned. Replaying experience prevents this by storing a fixed number of recent experiences (old ones will be discarded as new ones come in) in a memory replay buffer. From this buffer, we draw random batches of experiences, or “memories” to learn from and make updates to the network @dqnbeyond.
-
--   Separate Q-target network: In vanilla Q-learning, we are only updating a guess for Q-values with another guess. The weight update, $Delta w$ is given by $$begin{aligned}
-    Delta w  &= alpha [(r + gamma mathrm{max}_a Q(s', a, w)) \
-    &quad quad - Q(s, a, w)]nabla_w Q(s, a, w),end{aligned}$$ where $r + gamma text{max}_a Q(s', a, w)$ is our Q-target and $Q(s, a, w)$ is our current estimate of Q-value. The issue is that we are using the same set of weights to estimate the Q-target and the Q-value. At every step of training, our Q-values shift but the target also does, so we are essentially chasing a moving target! We can break this correlation by using a separate network with parameter $w^{-}$. The new weight update is given by $$begin{aligned}
-    Delta w  &= alpha [(r + gamma text{max}_a Q(s', a, w^{-})) \
-    &quad quad - Q(s, a, w)]nabla_w Q(s, a, w).end{aligned}$$ This modification makes the training more stable as it overcomes the short-term oscillations.
 
 Experimental Details
 ====================
@@ -113,4 +107,4 @@ In earlier experiments, we built a network of two fully-connected layers of 64 u
 
 ![Learning curves of learners with Huber loss versus MSE loss function.<span data-label="fig:mabesthuber"></span>](https://raw.githubusercontent.com/drawar/drawar.github.io/master/_posts/dqn-agent-ma-reward-huber.pdf){width=".45textwidth"}
 
-Even though the agent was able to complete learning in a reasonable number of episodes with these modifications, performance could be further improved by a number of changes. One of them is regarding the implementation of replay memory buffer. The simplest way, which was what we implemented, was to use `deque` in Python @collections. However, sampling from deque can be extremely slow because it doesn’t support fast random indexing @beatatari. Given more time, we would have explored the option of a ring buffer data structure, which is proposed in the original paper. In addition, state-of-the-art frameworks such as Double DQN @DBLP:journals/corr/HasseltGS15 and Dueling DQN @DBLP:journals/corr/WangFL15 could improve the stability of learning by reducing the likelihood of overestimaation of Q-values due to the maximum operation used in the formula for finding the targets. A different approach based on policy gradient method such as Proximal Policy Optimzation (PPO) @DBLP:journals/corr/SchulmanWDRK17 could also be explored.
+
